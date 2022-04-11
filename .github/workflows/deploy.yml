@@ -16,11 +16,10 @@ jobs:
     steps:
       - uses: actions/checkout@v1
       - name: Render Book
-        run: Rscript -e 'bookdown::render_book("index.Rmd")'
+        run: Rscript -e 'rmarkdown::render("report/Report.Rmd")'
       - uses: actions/upload-artifact@v1
         with:
-          name: _book
-          path: _book/
+          name: report/Report.html
   
 # Need to first create an empty gh-pages branch
 # see https://pkgdown.r-lib.org/reference/deploy_site_github.html
@@ -35,8 +34,7 @@ jobs:
      - name: Download artifact
        uses: actions/download-artifact@v1.0.0
        with:
-         name: _book # optional
-         path: _book # optional
+         name: report/Report.html # optional
      - name: Deploy to GitHub Pages
        uses: Cecilapp/GitHub-Pages-deploy@v2
        env:
