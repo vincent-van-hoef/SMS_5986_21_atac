@@ -14,7 +14,6 @@ output:
 ---
 
 ```{r, include = FALSE, dev = "svglite"}
-library(pander)
 library(dplyr)
 knitr::opts_chunk$set(
   echo=FALSE,
