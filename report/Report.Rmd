@@ -13,7 +13,7 @@ output:
       before_body: ./assets/logo.html
 ---
 
-```{r, include = FALSE}
+```{r, include = FALSE, dev = "svglite"}
 library(pander)
 library(dplyr)
 knitr::opts_chunk$set(
@@ -30,7 +30,7 @@ This is an intermediate report for the analysis of project #5986. It includes th
 
 The experiment consist of 2 patient-derived cell lines; each either knocked down for IRAK3 or control and followed during 4 timepoints: 0, 1, 4 and 24 hours. So, a total of 16 samples to be analyzed:
 
-```{r tab, results='asis'}
+```{r tab, results='asis', dev = "svglite"}
 tab <- "
 | Name | Treatment | Time | Donor |
 |------|:-----------:|:------:|:-----:|
