@@ -19,7 +19,7 @@ jobs:
         run: Rscript -e 'rmarkdown::render("report/Report.Rmd")'
       - uses: actions/upload-artifact@v1
         with:
-          name: report/Report.html
+          name: Report.html
           path: report
   
 # Need to first create an empty gh-pages branch
@@ -35,7 +35,7 @@ jobs:
      - name: Download artifact
        uses: actions/download-artifact@v1.0.0
        with:
-         name: report/Report.html # optional
+         name: Report.html # optional
          path: report
      - name: Deploy to GitHub Pages
        uses: Cecilapp/GitHub-Pages-deploy@v2
