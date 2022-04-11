@@ -19,7 +19,8 @@ library(dplyr)
 knitr::opts_chunk$set(
   echo=FALSE,
   message=FALSE,
-  warnings=FALSE
+  warnings=FALSE,
+  dev = "svglite"
 )
 ```
 
