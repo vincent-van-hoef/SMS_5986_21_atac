@@ -13,12 +13,13 @@ output:
       before_body: ./assets/logo.html
 ---
 
-```{r, include = FALSE}
+```{r, include = FALSE, dev='svglite'}
 library(dplyr)
 knitr::opts_chunk$set(
   echo=FALSE,
   message=FALSE,
-  warnings=FALSE
+  warnings=FALSE,
+  dev='svglite'
 )
 ```
 
