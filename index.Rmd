@@ -14,7 +14,6 @@ output:
 ---
 
 ```{r, include = FALSE}
-library(pander)
 library(dplyr)
 knitr::opts_chunk$set(
   echo=FALSE,
@@ -125,7 +124,7 @@ MultiQC is a reporting tool that parses summary statistics from results and log 
 
 
 ```{r, out.width="100%"}
-knitr::include_url("../results/multiqc/broadPeak/multiqc_report.html", height = "800px")
+knitr::include_url("./results/multiqc/broadPeak/multiqc_report.html", height = "800px")
 ```
 
 
@@ -134,7 +133,7 @@ knitr::include_url("../results/multiqc/broadPeak/multiqc_report.html", height = 
 ataqv makes some ATAC specific quality plots. Again, below is an interactive report showing these plots. Help for the specific plots can be found by clicking on the question mark in each figure.
 
 ```{r, out.width="100%"}
-knitr::include_url("../results/bwa/mergedLibrary/ataqv/broadPeak/html/index.html", height = "800px")
+knitr::include_url("./results/bwa/mergedLibrary/ataqv/broadPeak/html/index.html", height = "800px")
 ```
 
 :::note
@@ -148,8 +147,8 @@ Below, a few ATAC-specific quality plots are highlighted.
 Typically, a successful ATAC-seq experiment should generate a fragment size distribution plot with decreasing and periodical peaks corresponding to the nucleosome-free regions (NFR) (< 100bp) and mono-, di-, and tri-nucleosomes (~200, 400, 600bp, respectively). All samples have a fragment size distribution showing the expected peaks.
 
 ```{r}
-headers <- gsub(".mLb.*", "", list.files(path="../results/bwa/mergedLibrary/picard_metrics/pdf/", pattern = "*insert_size_histogram.pdf", full.names = FALSE))
-plots <- list.files(path="../results/bwa/mergedLibrary/picard_metrics/pdf", pattern = "*insert_size_histogram.pdf", full.names = TRUE)
+headers <- gsub(".mLb.*", "", list.files(path="./results/bwa/mergedLibrary/picard_metrics/pdf/", pattern = "*insert_size_histogram.pdf", full.names = FALSE))
+plots <- list.files(path="./results/bwa/mergedLibrary/picard_metrics/pdf", pattern = "*insert_size_histogram.pdf", full.names = TRUE)
 names(plots) <- headers
 ```
 
@@ -172,14 +171,14 @@ for(h in names(plots)) {
 The ENCODE data standards for ATAC-seq data state among other things that the fraction of reads in called peak regions (GRiP score) should be greater than 0.3, although values above 0.2 are acceptable. Almost all samples clear these thresholds or are at least very near to 0.2. 
 
 ```{r}
-knitr::include_graphics("../results/bwa/mergedLibrary/frip.png")
+knitr::include_graphics("./results/bwa/mergedLibrary/frip.png")
 ```
 
 ## Number of peaks
 
 Peaks were only called when present in both replicates; this to reduce most of the donor specific effects. In total, so combining all peaks found in both replicates across all samples, the number of peaks is 82704. Below you can see an UpSet plot of how these are distributed among the samples.
 
-![](../results/bwa/mergedLibrary/macs/broadPeak/consensus/consensus_peaks.mLb.clN.boolean.intersect.plot.pdf){width=860px height=640px}
+![](./results/bwa/mergedLibrary/macs/broadPeak/consensus/consensus_peaks.mLb.clN.boolean.intersect.plot.pdf){width=860px height=640px}
 
 
 # Normalization
@@ -195,8 +194,8 @@ On the right, you can see curves displaying the smoothed gene or peak counts per
 The two plots show the need for normalization. Many methods are available (and were indeed tried during the analysis) but here the results are shown for FQ-FQ normalization. This is a GC aware normalization method, based on two rounds of full-quantile normalization. First, FQ normalization within a sample across bins of features (e.g., peaks or genes) with similar GC-content and, subsequently, FQ normalization between samples. FQ-FQ and other normalization methods for ATAc-seq have recently been described in [this paper](https://www.biorxiv.org/content/10.1101/2021.01.26.428252v1.full). Then FQ normalization panel below show this normalization indeed makes the samples more comparable.
 
 ```{r}
-norm <- list("Pre Normalization" = c("../results/analysis/diff_exp/pre_normalization/all_samples_RLE.png", "../results/analysis/diff_exp/pre_normalization/GC_content/gc_expr_link_pre_norm.png"),
-            "FQ Normalization" = c("../results/analysis/diff_exp/FQ_FQ/all_samples_RLE.png", "../results/analysis/diff_exp/FQ_FQ/GC_content/gc_expr_link_fq_fq_norm.png"))
+norm <- list("Pre Normalization" = c("./results/analysis/diff_exp/pre_normalization/all_samples_RLE.png", "./results/analysis/diff_exp/pre_normalization/GC_content/gc_expr_link_pre_norm.png"),
+            "FQ Normalization" = c("./results/analysis/diff_exp/FQ_FQ/all_samples_RLE.png", "./results/analysis/diff_exp/FQ_FQ/GC_content/gc_expr_link_fq_fq_norm.png"))
 ```
 
 ```{r, results='asis'}
@@ -224,21 +223,21 @@ The bottom row shows gc-content stratified boxplots of the log fold change of re
 Again, normalization greatly diminishes the biases affecting the peak counts.
 
 ```{r}
-pre <- data.frame(contrast = gsub(" _md.png", "", list.files("../results/analysis/diff_exp/pre_normalization/MD_plots/", pattern = "*md.png", full.names = FALSE)),
-                  plots = list.files("../results/analysis/diff_exp/pre_normalization/MD_plots/", pattern = "*md.png", full.names = TRUE))
-fqfq <- data.frame(contrast = gsub(" _md.png", "", list.files("../results/analysis/diff_exp/FQ_FQ/MD_plots/", pattern = "*md.png", full.names = FALSE)),
-                  plots = list.files("../results/analysis/diff_exp/FQ_FQ/MD_plots/", pattern = "*md.png", full.names = TRUE))
+pre <- data.frame(contrast = gsub(" _md.png", "", list.files("./results/analysis/diff_exp/pre_normalization/MD_plots/", pattern = "*md.png", full.names = FALSE)),
+                  plots = list.files("./results/analysis/diff_exp/pre_normalization/MD_plots/", pattern = "*md.png", full.names = TRUE))
+fqfq <- data.frame(contrast = gsub(" _md.png", "", list.files("./results/analysis/diff_exp/FQ_FQ/MD_plots/", pattern = "*md.png", full.names = FALSE)),
+                  plots = list.files("./results/analysis/diff_exp/FQ_FQ/MD_plots/", pattern = "*md.png", full.names = TRUE))
 plist <- pre %>% left_join(fqfq, by = "contrast")
-pre_gc <- data.frame(contrast = gsub(" _LFC_gc_bin.png", "", list.files("../results/analysis/diff_exp/pre_normalization/GC_content/", pattern = "*_gc_bin.png", full.names = FALSE)),
-                  plots = list.files("../results/analysis/diff_exp/pre_normalization/GC_content/", pattern = "*_gc_bin.png", full.names = TRUE))
+pre_gc <- data.frame(contrast = gsub(" _LFC_gc_bin.png", "", list.files("./results/analysis/diff_exp/pre_normalization/GC_content/", pattern = "*_gc_bin.png", full.names = FALSE)),
+                  plots = list.files("./results/analysis/diff_exp/pre_normalization/GC_content/", pattern = "*_gc_bin.png", full.names = TRUE))
 pre_gc <-   pre_gc %>% 
     mutate(contrast = gsub("_LFC_gc_bin.png", "", contrast)) %>% 
     tidyr::separate(contrast, into = c("s1", "s2"), sep = "_vs_") %>% 
     tidyr::unite("contrast", c("s2", "s1"), sep = " _vs_ ") %>%
     mutate(contrast = gsub("^C", " C", contrast))
 plist <- plist %>% left_join(pre_gc, by = "contrast")
-fqfq_gc <- data.frame(contrast = gsub("_LFC_gc_bin.png", "", list.files("../results/analysis/diff_exp/FQ_FQ/GC_content/", pattern = "*_gc_bin.png", full.names = FALSE)),
-                  plots = list.files("../results/analysis/diff_exp/FQ_FQ/GC_content/", pattern = "*_gc_bin.png", full.names = TRUE))
+fqfq_gc <- data.frame(contrast = gsub("_LFC_gc_bin.png", "", list.files("./results/analysis/diff_exp/FQ_FQ/GC_content/", pattern = "*_gc_bin.png", full.names = FALSE)),
+                  plots = list.files("./results/analysis/diff_exp/FQ_FQ/GC_content/", pattern = "*_gc_bin.png", full.names = TRUE))
 fqfq_gc <- fqfq_gc %>% tidyr::separate(contrast, into = c("s1", "s2"), sep = "_vs_") %>% tidyr::unite("contrast", c("s2", "s1"), sep = " _vs_ ")
 fqfq_gc$contrast <- gsub("^C", " C", fqfq_gc$contrast)
 plist <- plist %>% left_join(fqfq_gc, by = "contrast")
@@ -265,7 +264,7 @@ Using [Principal Component Analysis](http://setosa.io/ev/principal-component-ana
 using the two first principal components (PC). These components are linear combinations of the peaks that explain the most variation between those samples. These kind of plots can be used to examine the samples for outliers, sample swaps, batch effects and other relationships. When normalization successfully removed technical or batch artefacts, the relative distances between samples should be biologically interpretable. A plot of PC1 vs PC2 using the 500 most variable peaks and colored by their experimental group is shown below. 
 The different time points do seem to cluster in this plot, with timepoints 1 and 4 more similar, separate from both timepoint 0 and 24. Knockdown samples are not easily distinguishable from control samples, indicating they are very alike. There does seem to be a small donor effect along PC2 (might be worth taking into account during DE...). From this PCA plot one can infer differences exist between the time points and that there do not appear to be major outliers or obvious sample swaps between time points.
 
-![](../results/analysis/diff_exp/FQ_FQ/PCA_PC1_PC2.pdf){width=640px height=640px}
+![](./results/analysis/diff_exp/FQ_FQ/PCA_PC1_PC2.pdf){width=640px height=640px}
 
 # Differential Expression {.tabset .tabset-pills}
 
@@ -298,10 +297,10 @@ So what does FDR < 0.05 mean? By setting the FDR cutoff to < 0.05, we’re sayin
 Below are shown the **top 1000 genes per contrast**, ranked by FDR. This is an interactive table so you can filter or rank as you wish by clincking on the arrows in the header. Moreover, a volcano plot of the results can be seen in the "Volcano" tab. Peaks are colored red if their adjusted p value is smaller than 0.05 and the log2 Fold Change is larger than 1 or smaller than -1. The full results nd the volcano plot are available by clicking on the link in the download tab. Annotation of the peaks is done using HOMER (description below).
 
 ```{r}
-de_files <- data.frame(contrast= gsub("/.*", "",list.files("../results/analysis/diff_exp/FQ_FQ/DESeq2/", pattern = "\\d.html", recursive = TRUE)),
-                       tables = list.files("../results/analysis/diff_exp/FQ_FQ/DESeq2/", pattern = "\\d.html", recursive = TRUE, full.names = TRUE),
-                       volcanos =  list.files("../results/analysis/diff_exp/FQ_FQ/DESeq2/", pattern = "volcano.png", recursive = TRUE, full.names = TRUE),
-                       res = list.files("../results/analysis/diff_exp/FQ_FQ/DESeq2/", pattern = "xlsx", recursive = TRUE, full.names = TRUE))
+de_files <- data.frame(contrast= gsub("/.*", "",list.files("./results/analysis/diff_exp/FQ_FQ/DESeq2/", pattern = "\\d.html", recursive = TRUE)),
+                       tables = list.files("./results/analysis/diff_exp/FQ_FQ/DESeq2/", pattern = "\\d.html", recursive = TRUE, full.names = TRUE),
+                       volcanos =  list.files("./results/analysis/diff_exp/FQ_FQ/DESeq2/", pattern = "volcano.png", recursive = TRUE, full.names = TRUE),
+                       res = list.files("./results/analysis/diff_exp/FQ_FQ/DESeq2/", pattern = "xlsx", recursive = TRUE, full.names = TRUE))
 ```
 
 ```{r, results='asis'}
@@ -371,11 +370,11 @@ Over-representation (or enrichment) analysis is a statistical method that determ
 The results are collected in interactive html reports. Clicking on a term will show which specific genes are in our dataset. Figures and tables can be downloaded. 
 
 ```{r}
-ora_files <- data.frame(contrast= gsub("/.*", "",list.files("../results/analysis/diff_exp/FQ_FQ/DESeq2/", pattern = "_go_down.html", recursive = TRUE)),
-                        ora_up = list.files("../results/analysis/diff_exp/FQ_FQ/DESeq2/", pattern = "go_up.html", full.names = TRUE, recursive = TRUE),
-                        ora_down = list.files("../results/analysis/diff_exp/FQ_FQ/DESeq2/", pattern = "go_down.html", full.names = TRUE, recursive = TRUE),
-                        kegg_up = list.files("../results/analysis/diff_exp/FQ_FQ/DESeq2/", pattern = "kegg_up.html", full.names = TRUE, recursive = TRUE),
-                        kegg_down = list.files("../results/analysis/diff_exp/FQ_FQ/DESeq2/", pattern = "kegg_down.html", full.names = TRUE, recursive = TRUE))
+ora_files <- data.frame(contrast= gsub("/.*", "",list.files("./results/analysis/diff_exp/FQ_FQ/DESeq2/", pattern = "_go_down.html", recursive = TRUE)),
+                        ora_up = list.files("./results/analysis/diff_exp/FQ_FQ/DESeq2/", pattern = "go_up.html", full.names = TRUE, recursive = TRUE),
+                        ora_down = list.files("./results/analysis/diff_exp/FQ_FQ/DESeq2/", pattern = "go_down.html", full.names = TRUE, recursive = TRUE),
+                        kegg_up = list.files("./results/analysis/diff_exp/FQ_FQ/DESeq2/", pattern = "kegg_up.html", full.names = TRUE, recursive = TRUE),
+                        kegg_down = list.files("./results/analysis/diff_exp/FQ_FQ/DESeq2/", pattern = "kegg_down.html", full.names = TRUE, recursive = TRUE))
 ```
 
 ```{r, results='asis'}
@@ -442,8 +441,8 @@ In this projects we used as a ranking metric the log2FoldChange of the peaks wit
 :::
 
 ```{r}
-gsea_files <- data.frame(contrast= gsub("/.*", "",list.files("../results/analysis/diff_exp/FQ_FQ/DESeq2/", pattern = "_gsea.html", recursive = TRUE)),
-                        gsea = list.files("../results/analysis/diff_exp/FQ_FQ/DESeq2/", pattern = "_gsea.html", full.names = TRUE, recursive = TRUE))
+gsea_files <- data.frame(contrast= gsub("/.*", "",list.files("./results/analysis/diff_exp/FQ_FQ/DESeq2/", pattern = "_gsea.html", recursive = TRUE)),
+                        gsea = list.files("./results/analysis/diff_exp/FQ_FQ/DESeq2/", pattern = "_gsea.html", full.names = TRUE, recursive = TRUE))
 ```
 
 ```{r, results='asis'}

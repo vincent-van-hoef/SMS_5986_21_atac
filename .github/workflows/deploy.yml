@@ -12,15 +12,15 @@ jobs:
     name: Render-Book
     runs-on: ubuntu-latest
     container:
-      image: vvanhoef/r-min-bookdown:0.1
+      image: vvanhoef/r-min-bookdown:0.2
     steps:
       - uses: actions/checkout@v1
       - name: Render Book
-        run: Rscript -e 'rmarkdown::render("report/Report.Rmd")'
+        run: Rscript -e 'rmarkdown::render("index.Rmd")'
       - uses: actions/upload-artifact@v1
         with:
-          name: Report.html
-          path: report
+          name: index.html
+          path: .
   
 # Need to first create an empty gh-pages branch
 # see https://pkgdown.r-lib.org/reference/deploy_site_github.html
@@ -35,11 +35,11 @@ jobs:
      - name: Download artifact
        uses: actions/download-artifact@v1.0.0
        with:
-         name: Report.html # optional
-         path: report
+         name: index.html # optional
+         path: .
      - name: Deploy to GitHub Pages
        uses: Cecilapp/GitHub-Pages-deploy@v2
        env:
           EMAIL: ${{ secrets.EMAIL }}               # must be a verified email
           GH_TOKEN: ${{ secrets.GH_PAT }} # https://github.com/settings/tokens
-          BUILD_DIR: report/
+          BUILD_DIR: .
