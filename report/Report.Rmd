@@ -14,7 +14,7 @@ output:
 ---
 
 ```{r, include = FALSE, dev = "svglite"}
-library(dplyr)
+
 knitr::opts_chunk$set(
   echo=FALSE,
   message=FALSE,
@@ -222,41 +222,6 @@ The top row shows MD plots. MD plots depict global patterns of measurements comp
 The bottom row shows gc-content stratified boxplots of the log fold change of read counts. One would expect most log fold changes to be centered around zero and no systematic shifts associated with the gc content.
 
 Again, normalization greatly diminishes the biases affecting the peak counts.
-
-```{r}
-pre <- data.frame(contrast = gsub(" _md.png", "", list.files("../results/analysis/diff_exp/pre_normalization/MD_plots/", pattern = "*md.png", full.names = FALSE)),
-                  plots = list.files("../results/analysis/diff_exp/pre_normalization/MD_plots/", pattern = "*md.png", full.names = TRUE))
-fqfq <- data.frame(contrast = gsub(" _md.png", "", list.files("../results/analysis/diff_exp/FQ_FQ/MD_plots/", pattern = "*md.png", full.names = FALSE)),
-                  plots = list.files("../results/analysis/diff_exp/FQ_FQ/MD_plots/", pattern = "*md.png", full.names = TRUE))
-plist <- pre %>% left_join(fqfq, by = "contrast")
-pre_gc <- data.frame(contrast = gsub(" _LFC_gc_bin.png", "", list.files("../results/analysis/diff_exp/pre_normalization/GC_content/", pattern = "*_gc_bin.png", full.names = FALSE)),
-                  plots = list.files("../results/analysis/diff_exp/pre_normalization/GC_content/", pattern = "*_gc_bin.png", full.names = TRUE))
-pre_gc <-   pre_gc %>% 
-    mutate(contrast = gsub("_LFC_gc_bin.png", "", contrast)) %>% 
-    tidyr::separate(contrast, into = c("s1", "s2"), sep = "_vs_") %>% 
-    tidyr::unite("contrast", c("s2", "s1"), sep = " _vs_ ") %>%
-    mutate(contrast = gsub("^C", " C", contrast))
-plist <- plist %>% left_join(pre_gc, by = "contrast")
-fqfq_gc <- data.frame(contrast = gsub("_LFC_gc_bin.png", "", list.files("../results/analysis/diff_exp/FQ_FQ/GC_content/", pattern = "*_gc_bin.png", full.names = FALSE)),
-                  plots = list.files("../results/analysis/diff_exp/FQ_FQ/GC_content/", pattern = "*_gc_bin.png", full.names = TRUE))
-fqfq_gc <- fqfq_gc %>% tidyr::separate(contrast, into = c("s1", "s2"), sep = "_vs_") %>% tidyr::unite("contrast", c("s2", "s1"), sep = " _vs_ ")
-fqfq_gc$contrast <- gsub("^C", " C", fqfq_gc$contrast)
-plist <- plist %>% left_join(fqfq_gc, by = "contrast")
-```
-
-```{r, results='asis'}
-for(h in 1:nrow(plist)) {
-  cat('### ',plist$contrast[h], ' {.tabset .unnumbered}', sep = "")
-  cat('  \n')
-  cat('  \n')
-  cat('  \n')
-  cat('![](', plist$plots.x[h], '){width=400px height=400px}', ' ![](', plist$plots.y[h], '){width=400px height=400px}', sep="")
-  cat('![](', plist$plots.x.x[h], '){width=400px height=400px}', ' ![](', plist$plots.y.y[h], '){width=400px height=400px}', sep="")
-  cat('  \n')
-  cat('  \n')
-  cat('</center>')
-}
-```
 
 
 # PCA
