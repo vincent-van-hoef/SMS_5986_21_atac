@@ -1,7 +1,6 @@
 .Rproj.user
+.DS_Store
 .Rhistory
 .RData
 .Ruserdata
-results
-results_t0
-!results/bwa/mergedLibrary/frip.png
+SMS_5986_21_atac.Rproj

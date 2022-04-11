@@ -1,0 +1,1 @@
+Geneid	Chr	Start	End	Strand	Length	baseMean	log2FoldChange	lfcSE	stat	pvalue	padj	C24_R1.raw	C24_R2.raw	IK24_R1.raw	IK24_R2.raw	C24_R1.pseudo	C24_R2.pseudo	IK24_R1.pseudo	IK24_R2.pseudo

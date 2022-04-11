@@ -1,0 +1,1 @@
+/proj/sens2021596/nobackup/results/work/d5/31b170a045bcdb149b941821407992/C0_R1_T1_1.fastq.gz_trimming_report.txt

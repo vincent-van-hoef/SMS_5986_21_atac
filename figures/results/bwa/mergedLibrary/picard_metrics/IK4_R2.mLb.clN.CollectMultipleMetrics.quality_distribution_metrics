@@ -1,0 +1,12 @@
+## htsjdk.samtools.metrics.StringHeader
+# CollectMultipleMetrics INPUT=IK4_R2.mLb.clN.sorted.bam OUTPUT=IK4_R2.mLb.clN.CollectMultipleMetrics TMP_DIR=[tmp] VALIDATION_STRINGENCY=LENIENT REFERENCE_SEQUENCE=genome.fa    ASSUME_SORTED=true STOP_AFTER=0 METRIC_ACCUMULATION_LEVEL=[ALL_READS] PROGRAM=[CollectAlignmentSummaryMetrics, CollectBaseDistributionByCycle, CollectInsertSizeMetrics, MeanQualityByCycle, QualityScoreDistribution] INCLUDE_UNPAIRED=false VERBOSITY=INFO QUIET=false COMPRESSION_LEVEL=5 MAX_RECORDS_IN_RAM=500000 CREATE_INDEX=false CREATE_MD5_FILE=false GA4GH_CLIENT_SECRETS=client_secrets.json USE_JDK_DEFLATER=false USE_JDK_INFLATER=false
+## htsjdk.samtools.metrics.StringHeader
+# Started on: Thu Feb 24 22:24:55 UTC 2022
+
+
+## HISTOGRAM	java.lang.Byte
+QUALITY	COUNT_OF_Q
+11	144061480
+25	320193553
+37	7226566851
+

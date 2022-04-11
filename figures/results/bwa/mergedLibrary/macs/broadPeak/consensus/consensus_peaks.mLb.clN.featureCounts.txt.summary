@@ -1,0 +1,15 @@
+Status	C24_R2.mLb.clN.bam	C0_R2.mLb.clN.bam	IK1_R2.mLb.clN.bam	IK0_R1.mLb.clN.bam	IK1_R1.mLb.clN.bam	C1_R2.mLb.clN.bam	C4_R2.mLb.clN.bam	IK24_R1.mLb.clN.bam	IK24_R2.mLb.clN.bam	C4_R1.mLb.clN.bam	C24_R1.mLb.clN.bam	C0_R1.mLb.clN.bam	IK4_R2.mLb.clN.bam	IK0_R2.mLb.clN.bam	IK4_R1.mLb.clN.bam	C1_R1.mLb.clN.bam
+Assigned	6872581	16250804	11011645	8691120	7515916	12410558	7306800	13814983	14813571	6252705	14114975	8416366	11228313	16087966	8082589	7258952
+Unassigned_Unmapped	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Unassigned_Read_Type	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Unassigned_Singleton	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Unassigned_MappingQuality	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Unassigned_Chimera	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Unassigned_FragmentLength	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Unassigned_Duplicate	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Unassigned_MultiMapping	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Unassigned_Secondary	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Unassigned_NonSplit	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Unassigned_NoFeatures	9290866	20804840	19715075	19944680	22634221	24169066	12649891	19646659	17641410	18996007	18797140	22190340	18748606	23562783	22399186	21425410
+Unassigned_Overlapping_Length	77238	156620	121835	96521	108708	142530	91252	128388	157152	94234	127651	100542	137750	163872	112619	99974
+Unassigned_Ambiguity	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0

@@ -1,0 +1,512 @@
+C0_R1_T1_1:
+  bp_processed: 4862508300
+  bp_written: 3884955518
+  percent_trimmed: 20.10387893836603
+  quality_trimmed: 17818938
+  r_processed: 32416722
+  r_with_adapters: 20065671
+  r_written: 32416722
+C0_R1_T1_2:
+  bp_processed: 4862508300
+  bp_written: 3873950541
+  percent_trimmed: 20.330201986493268
+  quality_trimmed: 12763864
+  r_processed: 32416722
+  r_with_adapters: 20131140
+  r_written: 32416722
+C0_R1_T2_1:
+  bp_processed: 4050898350
+  bp_written: 3152454016
+  percent_trimmed: 22.178891109425148
+  quality_trimmed: 38887619
+  r_processed: 27005989
+  r_with_adapters: 17528361
+  r_written: 27005989
+C0_R1_T2_2:
+  bp_processed: 4050898350
+  bp_written: 3147415975
+  percent_trimmed: 22.303259596726242
+  quality_trimmed: 14442464
+  r_processed: 27005989
+  r_with_adapters: 17520932
+  r_written: 27005989
+C0_R2_T1_1:
+  bp_processed: 5181282150
+  bp_written: 4127150108
+  percent_trimmed: 20.34500363968791
+  quality_trimmed: 21139939
+  r_processed: 34541881
+  r_with_adapters: 21463454
+  r_written: 34541881
+C0_R2_T1_2:
+  bp_processed: 5181282150
+  bp_written: 4120649259
+  percent_trimmed: 20.47047159938974
+  quality_trimmed: 17643038
+  r_processed: 34541881
+  r_with_adapters: 21441379
+  r_written: 34541881
+C0_R2_T2_1:
+  bp_processed: 5086294500
+  bp_written: 4082836367
+  percent_trimmed: 19.728667559458067
+  quality_trimmed: 29293069
+  r_processed: 33908630
+  r_with_adapters: 20905477
+  r_written: 33908630
+C0_R2_T2_2:
+  bp_processed: 5086294500
+  bp_written: 4074953594
+  percent_trimmed: 19.88364822367246
+  quality_trimmed: 19882569
+  r_processed: 33908630
+  r_with_adapters: 20908201
+  r_written: 33908630
+C1_R1_T1_1:
+  bp_processed: 3922941600
+  bp_written: 3311780998
+  percent_trimmed: 15.579140969113586
+  quality_trimmed: 21527619
+  r_processed: 26152944
+  r_with_adapters: 14770934
+  r_written: 26152944
+C1_R1_T1_2:
+  bp_processed: 3922941600
+  bp_written: 3305034095
+  percent_trimmed: 15.751126782004606
+  quality_trimmed: 14647837
+  r_processed: 26152944
+  r_with_adapters: 14746165
+  r_written: 26152944
+C1_R1_T2_1:
+  bp_processed: 3880957950
+  bp_written: 3139184990
+  percent_trimmed: 19.113140867707674
+  quality_trimmed: 15777174
+  r_processed: 25873053
+  r_with_adapters: 15672291
+  r_written: 25873053
+C1_R1_T2_2:
+  bp_processed: 3880957950
+  bp_written: 3134534182
+  percent_trimmed: 19.232977466297978
+  quality_trimmed: 12490794
+  r_processed: 25873053
+  r_with_adapters: 15685914
+  r_written: 25873053
+C1_R2_T1_1:
+  bp_processed: 4667334300
+  bp_written: 3641471104
+  percent_trimmed: 21.979638270179187
+  quality_trimmed: 31933374
+  r_processed: 31115562
+  r_with_adapters: 19928082
+  r_written: 31115562
+C1_R2_T1_2:
+  bp_processed: 4667334300
+  bp_written: 3635492405
+  percent_trimmed: 22.107734922694526
+  quality_trimmed: 17251930
+  r_processed: 31115562
+  r_with_adapters: 19872946
+  r_written: 31115562
+C1_R2_T2_1:
+  bp_processed: 5045935200
+  bp_written: 3980233505
+  percent_trimmed: 21.120003582289364
+  quality_trimmed: 17649537
+  r_processed: 33639568
+  r_with_adapters: 20913034
+  r_written: 33639568
+C1_R2_T2_2:
+  bp_processed: 5045935200
+  bp_written: 3972760084
+  percent_trimmed: 21.268111330482405
+  quality_trimmed: 18117879
+  r_processed: 33639568
+  r_with_adapters: 20885361
+  r_written: 33639568
+C24_R1_T1_1:
+  bp_processed: 4301381700
+  bp_written: 3426708658
+  percent_trimmed: 20.334699475752174
+  quality_trimmed: 15583864
+  r_processed: 28675878
+  r_with_adapters: 18076997
+  r_written: 28675878
+C24_R1_T1_2:
+  bp_processed: 4301381700
+  bp_written: 3422781156
+  percent_trimmed: 20.426007391996855
+  quality_trimmed: 15054700
+  r_processed: 28675878
+  r_with_adapters: 18070321
+  r_written: 28675878
+C24_R1_T2_1:
+  bp_processed: 5608175400
+  bp_written: 4522613874
+  percent_trimmed: 19.356768442014136
+  quality_trimmed: 21933808
+  r_processed: 37387836
+  r_with_adapters: 22973970
+  r_written: 37387836
+C24_R1_T2_2:
+  bp_processed: 5608175400
+  bp_written: 4515440359
+  percent_trimmed: 19.48468018671456
+  quality_trimmed: 20578830
+  r_processed: 37387836
+  r_with_adapters: 22949726
+  r_written: 37387836
+C24_R2_T1_1:
+  bp_processed: 2528380350
+  bp_written: 2198614771
+  percent_trimmed: 13.042562168306679
+  quality_trimmed: 13118939
+  r_processed: 16855869
+  r_with_adapters: 8833187
+  r_written: 16855869
+C24_R2_T1_2:
+  bp_processed: 2528380350
+  bp_written: 2182777045
+  percent_trimmed: 13.668960249592194
+  quality_trimmed: 7096961
+  r_processed: 16855869
+  r_with_adapters: 8918659
+  r_written: 16855869
+C24_R2_T2_1:
+  bp_processed: 2148098850
+  bp_written: 1926070279
+  percent_trimmed: 10.336049991367949
+  quality_trimmed: 10734554
+  r_processed: 14320659
+  r_with_adapters: 7098160
+  r_written: 14320659
+C24_R2_T2_2:
+  bp_processed: 2148098850
+  bp_written: 1911880204
+  percent_trimmed: 10.996637608180833
+  quality_trimmed: 7147126
+  r_processed: 14320659
+  r_with_adapters: 7229281
+  r_written: 14320659
+C4_R1_T1_1:
+  bp_processed: 3584179800
+  bp_written: 3034608254
+  percent_trimmed: 15.33325828129493
+  quality_trimmed: 21477653
+  r_processed: 23894532
+  r_with_adapters: 13494907
+  r_written: 23894532
+C4_R1_T1_2:
+  bp_processed: 3584179800
+  bp_written: 3028198320
+  percent_trimmed: 15.512097914284324
+  quality_trimmed: 13510479
+  r_processed: 23894532
+  r_with_adapters: 13474156
+  r_written: 23894532
+C4_R1_T2_1:
+  bp_processed: 3085168650
+  bp_written: 2664753485
+  percent_trimmed: 13.626975141213107
+  quality_trimmed: 24584947
+  r_processed: 20567791
+  r_with_adapters: 10998440
+  r_written: 20567791
+C4_R1_T2_2:
+  bp_processed: 3085168650
+  bp_written: 2650952953
+  percent_trimmed: 14.074293701901839
+  quality_trimmed: 8938776
+  r_processed: 20567791
+  r_with_adapters: 11111661
+  r_written: 20567791
+C4_R2_T1_1:
+  bp_processed: 2993642550
+  bp_written: 2490010371
+  percent_trimmed: 16.823390588164912
+  quality_trimmed: 13639139
+  r_processed: 19957617
+  r_with_adapters: 11632227
+  r_written: 19957617
+C4_R2_T1_2:
+  bp_processed: 2993642550
+  bp_written: 2477207730
+  percent_trimmed: 17.25105156592593
+  quality_trimmed: 9102865
+  r_processed: 19957617
+  r_with_adapters: 11702929
+  r_written: 19957617
+C4_R2_T2_1:
+  bp_processed: 2531448150
+  bp_written: 2246297493
+  percent_trimmed: 11.264329352351144
+  quality_trimmed: 11713971
+  r_processed: 16876321
+  r_with_adapters: 8612881
+  r_written: 16876321
+C4_R2_T2_2:
+  bp_processed: 2531448150
+  bp_written: 2230674152
+  percent_trimmed: 11.881499449238177
+  quality_trimmed: 7939697
+  r_processed: 16876321
+  r_with_adapters: 8727903
+  r_written: 16876321
+IK0_R1_T1_1:
+  bp_processed: 5219716050
+  bp_written: 4117625612
+  percent_trimmed: 21.113992168213823
+  quality_trimmed: 15032032
+  r_processed: 34798107
+  r_with_adapters: 22046396
+  r_written: 34798107
+IK0_R1_T1_2:
+  bp_processed: 5219716050
+  bp_written: 4110907965
+  percent_trimmed: 21.242689724472655
+  quality_trimmed: 18735611
+  r_processed: 34798107
+  r_with_adapters: 22029547
+  r_written: 34798107
+IK0_R1_T2_1:
+  bp_processed: 4004339250
+  bp_written: 3163936025
+  percent_trimmed: 20.987313325163445
+  quality_trimmed: 32596001
+  r_processed: 26695595
+  r_with_adapters: 17131808
+  r_written: 26695595
+IK0_R1_T2_2:
+  bp_processed: 4004339250
+  bp_written: 3159507338
+  percent_trimmed: 21.097910522940833
+  quality_trimmed: 12114647
+  r_processed: 26695595
+  r_with_adapters: 17123817
+  r_written: 26695595
+IK0_R2_T1_1:
+  bp_processed: 5636698350
+  bp_written: 4490760503
+  percent_trimmed: 20.32994806259235
+  quality_trimmed: 43172992
+  r_processed: 37577989
+  r_with_adapters: 23518805
+  r_written: 37577989
+IK0_R2_T1_2:
+  bp_processed: 5636698350
+  bp_written: 4484430646
+  percent_trimmed: 20.442245308372765
+  quality_trimmed: 20096965
+  r_processed: 37577989
+  r_with_adapters: 23505115
+  r_written: 37577989
+IK0_R2_T2_1:
+  bp_processed: 5458073400
+  bp_written: 4360184421
+  percent_trimmed: 20.114954463602487
+  quality_trimmed: 17812563
+  r_processed: 36387156
+  r_with_adapters: 22606675
+  r_written: 36387156
+IK0_R2_T2_2:
+  bp_processed: 5458073400
+  bp_written: 4353836182
+  percent_trimmed: 20.231263617671395
+  quality_trimmed: 19241126
+  r_processed: 36387156
+  r_with_adapters: 22544126
+  r_written: 36387156
+IK1_R1_T1_1:
+  bp_processed: 3919929450
+  bp_written: 3220894635
+  percent_trimmed: 17.83284173647564
+  quality_trimmed: 14341565
+  r_processed: 26132863
+  r_with_adapters: 15360144
+  r_written: 26132863
+IK1_R1_T1_2:
+  bp_processed: 3919929450
+  bp_written: 3214481577
+  percent_trimmed: 17.99644309925017
+  quality_trimmed: 14972332
+  r_processed: 26132863
+  r_with_adapters: 15302494
+  r_written: 26132863
+IK1_R1_T2_1:
+  bp_processed: 3867152700
+  bp_written: 3182101944
+  percent_trimmed: 17.714603201471718
+  quality_trimmed: 11946458
+  r_processed: 25781018
+  r_with_adapters: 14930307
+  r_written: 25781018
+IK1_R1_T2_2:
+  bp_processed: 3867152700
+  bp_written: 3175368276
+  percent_trimmed: 17.88872790050416
+  quality_trimmed: 10676559
+  r_processed: 25781018
+  r_with_adapters: 14930991
+  r_written: 25781018
+IK1_R2_T1_1:
+  bp_processed: 5161125150
+  bp_written: 4061298422
+  percent_trimmed: 21.309824816009353
+  quality_trimmed: 32969022
+  r_processed: 34407501
+  r_with_adapters: 21870398
+  r_written: 34407501
+IK1_R2_T1_2:
+  bp_processed: 5161125150
+  bp_written: 4055249333
+  percent_trimmed: 21.427029666195946
+  quality_trimmed: 17931161
+  r_processed: 34407501
+  r_with_adapters: 21776626
+  r_written: 34407501
+IK1_R2_T2_1:
+  bp_processed: 4109442000
+  bp_written: 3281523176
+  percent_trimmed: 20.146745567889752
+  quality_trimmed: 20850796
+  r_processed: 27396280
+  r_with_adapters: 17083518
+  r_written: 27396280
+IK1_R2_T2_2:
+  bp_processed: 4109442000
+  bp_written: 3276225852
+  percent_trimmed: 20.27565173081893
+  quality_trimmed: 13766453
+  r_processed: 27396280
+  r_with_adapters: 17079444
+  r_written: 27396280
+IK24_R1_T1_1:
+  bp_processed: 5507469600
+  bp_written: 4429531573
+  percent_trimmed: 19.572291910608094
+  quality_trimmed: 30030216
+  r_processed: 36716464
+  r_with_adapters: 22785798
+  r_written: 36716464
+IK24_R1_T1_2:
+  bp_processed: 5507469600
+  bp_written: 4422489485
+  percent_trimmed: 19.700156220562707
+  quality_trimmed: 15664010
+  r_processed: 36716464
+  r_with_adapters: 22819114
+  r_written: 36716464
+IK24_R1_T2_1:
+  bp_processed: 4438663350
+  bp_written: 3612926532
+  percent_trimmed: 18.603276547206494
+  quality_trimmed: 18422725
+  r_processed: 29591089
+  r_with_adapters: 18004599
+  r_written: 29591089
+IK24_R1_T2_2:
+  bp_processed: 4438663350
+  bp_written: 3606840020
+  percent_trimmed: 18.74040143188602
+  quality_trimmed: 15549801
+  r_processed: 29591089
+  r_with_adapters: 17983544
+  r_written: 29591089
+IK24_R2_T1_1:
+  bp_processed: 5083170900
+  bp_written: 4235991557
+  percent_trimmed: 16.666355699352938
+  quality_trimmed: 19801236
+  r_processed: 33887806
+  r_with_adapters: 19672135
+  r_written: 33887806
+IK24_R2_T1_2:
+  bp_processed: 5083170900
+  bp_written: 4227968448
+  percent_trimmed: 16.82419239534126
+  quality_trimmed: 20220674
+  r_processed: 33887806
+  r_with_adapters: 19628486
+  r_written: 33887806
+IK24_R2_T2_1:
+  bp_processed: 4486369050
+  bp_written: 3786402355
+  percent_trimmed: 15.602075691922849
+  quality_trimmed: 18762499
+  r_processed: 29909127
+  r_with_adapters: 16968725
+  r_written: 29909127
+IK24_R2_T2_2:
+  bp_processed: 4486369050
+  bp_written: 3778249574
+  percent_trimmed: 15.783799061292115
+  quality_trimmed: 19017389
+  r_processed: 29909127
+  r_with_adapters: 16905557
+  r_written: 29909127
+IK4_R1_T1_1:
+  bp_processed: 4889182200
+  bp_written: 4176236006
+  percent_trimmed: 14.582115471172255
+  quality_trimmed: 17058073
+  r_processed: 32594548
+  r_with_adapters: 18099681
+  r_written: 32594548
+IK4_R1_T1_2:
+  bp_processed: 4889182200
+  bp_written: 4167564451
+  percent_trimmed: 14.759477546163039
+  quality_trimmed: 19689228
+  r_processed: 32594548
+  r_with_adapters: 18036571
+  r_written: 32594548
+IK4_R1_T2_1:
+  bp_processed: 3509907900
+  bp_written: 2944946130
+  percent_trimmed: 16.096199276339988
+  quality_trimmed: 14037457
+  r_processed: 23399386
+  r_with_adapters: 13405268
+  r_written: 23399386
+IK4_R1_T2_2:
+  bp_processed: 3509907900
+  bp_written: 2939955162
+  percent_trimmed: 16.238395827993095
+  quality_trimmed: 13332207
+  r_processed: 23399386
+  r_with_adapters: 13375931
+  r_written: 23399386
+IK4_R2_T1_1:
+  bp_processed: 5153358750
+  bp_written: 4349843930
+  percent_trimmed: 15.592060614836878
+  quality_trimmed: 33742122
+  r_processed: 34355725
+  r_with_adapters: 19729975
+  r_written: 34355725
+IK4_R2_T1_2:
+  bp_processed: 5153358750
+  bp_written: 4341023074
+  percent_trimmed: 15.76322773957858
+  quality_trimmed: 18770531
+  r_processed: 34355725
+  r_with_adapters: 19726361
+  r_written: 34355725
+IK4_R2_T2_1:
+  bp_processed: 3259547250
+  bp_written: 2724710497
+  percent_trimmed: 16.408314160808683
+  quality_trimmed: 29105537
+  r_processed: 21730315
+  r_with_adapters: 12641577
+  r_written: 21730315
+IK4_R2_T2_2:
+  bp_processed: 3259547250
+  bp_written: 2718784088
+  percent_trimmed: 16.590131098728513
+  quality_trimmed: 13617704
+  r_processed: 21730315
+  r_with_adapters: 12610438
+  r_written: 21730315
