@@ -179,7 +179,7 @@ knitr::include_graphics("figures/results/bwa/mergedLibrary/frip.png")
 
 Peaks were only called when present in both replicates; this to reduce most of the donor specific effects. In total, so combining all peaks found in both replicates across all samples, the number of peaks is 82704. Below you can see an UpSet plot of how these are distributed among the samples.
 
-![](./results/bwa/mergedLibrary/macs/broadPeak/consensus/consensus_peaks.mLb.clN.boolean.intersect.plot.pdf){width=860px height=640px}
+![](figures/results/bwa/mergedLibrary/macs/broadPeak/consensus/consensus_peaks.mLb.clN.boolean.intersect.plot.pdf){width=860px height=640px}
 
 
 # Normalization
