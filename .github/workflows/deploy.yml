@@ -16,11 +16,11 @@ jobs:
     steps:
       - uses: actions/checkout@v1
       - name: Render Book
-        run: Rscript -e 'rmarkdown::render("index.Rmd")'
+        run: Rscript -e 'rmarkdown::render("index.Rmd", output_file = "_report/index.html")'
       - uses: actions/upload-artifact@v1
         with:
           name: index.html
-          path: index.html
+          path: _report/index.html
   
 # Need to first create an empty gh-pages branch
 # see https://pkgdown.r-lib.org/reference/deploy_site_github.html
@@ -42,4 +42,4 @@ jobs:
        env:
           EMAIL: ${{ secrets.EMAIL }}               # must be a verified email
           GH_TOKEN: ${{ secrets.GH_PAT }} # https://github.com/settings/tokens
-          BUILD_DIR: .
+          BUILD_DIR: _report
