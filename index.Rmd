@@ -22,7 +22,7 @@ knitr::opts_chunk$set(
 )
 ```
 
-This is an intermediate report for the analysis of project #5986. It includes the preprocessing, quality control and downstream analysis (i.e. differential expression and pathway enrichment analysis). More raw data is available but not yet included in this report.
+This is the report for the analysis of project #5986. It includes the preprocessing, quality control and downstream analysis (i.e. differential expression and pathway enrichment analysis). More raw data is available but not yet included in this report.
 
 # Data Description
 
