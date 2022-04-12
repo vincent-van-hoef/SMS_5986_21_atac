@@ -19,6 +19,10 @@ jobs:
           ref: main
       - name: Render Book
         run: Rscript -e 'rmarkdown::render("index.Rmd")'
+      - uses: actions/upload-artifact@v3
+        with:
+          name: index.html
+          path: index.html
       - uses: actions/download-artifact@v3
         with:
           name: index.html
