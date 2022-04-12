@@ -36,7 +36,7 @@ jobs:
        uses: actions/download-artifact@v1.0.0
        with:
          name: index.html # optional
-         path: index.html
+         path: _report/index.html
      - name: Deploy to GitHub Pages
        uses: Cecilapp/GitHub-Pages-deploy@v2
        env:
