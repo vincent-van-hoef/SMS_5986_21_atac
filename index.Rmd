@@ -7,7 +7,7 @@ output:
   bookdown::html_document2: 
     toc: true
     toc_float: true
-    self_contained: true
+    self_contained: false
     css: ./assets/style.css
     includes:
       before_body: ./assets/logo.html
