@@ -16,7 +16,7 @@ jobs:
     steps:
       - uses: actions/checkout@v1
       - name: Render Book
-        run: Rscript -e 'rmarkdown::render("index.Rmd"")'
+        run: Rscript -e 'rmarkdown::render("index.Rmd")'
       - uses: actions/upload-artifact@v1
         with:
           name: index.html
