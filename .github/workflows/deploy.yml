@@ -14,10 +14,9 @@ jobs:
     container:
       image: vvanhoef/r-min-bookdown:0.3
     steps:
-      - uses: actions/checkout@v1
       - name: Render Book
         run: Rscript -e 'rmarkdown::render("index.Rmd")'
-      - uses: actions/download-artifact@v1.0.0
+      - uses: actions/upload-artifact@v1
         with:
           name: index.html
           path: index.html
