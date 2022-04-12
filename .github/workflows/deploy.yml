@@ -20,7 +20,7 @@ jobs:
       - uses: actions/upload-artifact@v1
         with:
           name: index.html
-          path: .
+          path: index.html
   
 # Need to first create an empty gh-pages branch
 # see https://pkgdown.r-lib.org/reference/deploy_site_github.html
@@ -36,7 +36,7 @@ jobs:
        uses: actions/download-artifact@v1.0.0
        with:
          name: index.html # optional
-         path: .
+         path: index.html
      - name: Deploy to GitHub Pages
        uses: Cecilapp/GitHub-Pages-deploy@v2
        env:
