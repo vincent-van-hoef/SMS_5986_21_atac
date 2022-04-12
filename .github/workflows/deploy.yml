@@ -12,7 +12,7 @@ jobs:
     name: Render-Book
     runs-on: ubuntu-latest
     container:
-      image: vvanhoef/r-min-bookdown:0.2
+      image: vvanhoef/r-min-bookdown:0.3
     steps:
       - uses: actions/checkout@v1
       - name: Render Book
